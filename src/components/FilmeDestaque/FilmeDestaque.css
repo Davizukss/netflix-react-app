@@ -1,13 +1,116 @@
-.destaque{
+.destaque {
     height: 100vh;
 }
-.destaqueVertical{
+
+.destaqueVertical {
     width: inherit;
     height: inherit;
     background: linear-gradient(to top, #111 10%, transparent 90%);
 }
-.destaqueHorizontal{
+
+.destaqueHorizontal {
     width: inherit;
     height: inherit;
+    display: flex;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-bottom: 170px;
+    flex-direction: column;
+    justify-content: center;
     background: linear-gradient(to right, #111 30%, transparent 70%);
+}
+
+.destaqueNome {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.destaqueInfo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.destaqueAno,
+.destaqueTemporadas,
+.destaquePontos {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.destaquePontos {
+    color: #46d369;
+}
+
+.destaqueDescription {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40%;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.btnAssitir,
+.btnAddLista {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.btnAssitir {
+    color: #000;
+    background-color: #fff;
+}
+
+.btnAddLista {
+    background-color: #333;
+    color: #fff;
+}
+
+.btnAssitir:hover,
+.btnAddLista:hover {
+    transition: all ease 0.2s;
+    opacity: 0.7;
+}
+
+.destaqueGeneros {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+@media (max-width:760px) {
+    .destaque {
+        height: 80vh;
+    }
+
+    .destaqueNome {
+        font-size: 40px;
+    }
+
+    .destaqueInfo {
+        font-size: 16px;
+    }
+
+    .destaqueDescription {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .btnAssitir,
+    .btnAddLista {
+        font-size: 16px;
+    }
+    .destaqueGeneros{
+        font-size: 14px;
+    }
 }

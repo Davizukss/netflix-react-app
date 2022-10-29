@@ -8,3 +8,48 @@ body{
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+.listas{
+  margin-top: -100px;
+}
+.gitLogo{
+  padding-left: 20px;
+  height: 30px;
+  border-radius: 5px;
+}
+.gitLogo img{
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: #ccc;
+}
+p{
+  padding: 10px;
+}
+footer{
+  margin: 50px;
+  text-align: center;
+}
+.loading{
+  transform: all ease 1s;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.loading img{
+  transform: scale(0.4);
+}
+@media (max-width:760px) {
+
+  .listas{
+    margin-top: -150px;
+  }
+}

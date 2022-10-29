@@ -24,11 +24,11 @@ export default function ({ item }) {
                     <div className='destaqueDescription'>{item.overview}</div>
 
                     <div className='buttons'>
-                        <a href={`/watch/${item.id}`}>▶ Assistir</a>
-                        <a href={`/list/add/${item.id}`}>+ Minha Lista</a>
+                        <a className='btnAssitir' href={`/watch/${item.id}`}>▶ Assistir</a>
+                        <a  className='btnAddLista' href={`/list/add/${item.id}`}>+ Minha Lista</a>
 
                     </div>
-                    <div className='detaqueGeneros'><strong>Gêneros: </strong>{genres.join(', ')}...</div>
+                    <div className='destaqueGeneros'><strong>Gêneros: </strong>{genres.join(', ')}...</div>
                 </div>
             </div>
         </section>
